@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script defer src="src/index.js"></script>
+  </head>
+  <body>
+    <nav>
+        <ul>
+          <li><a href="#">Home</a></li><br>
+          <li><a href="#" onclick="toggleClocks('digital')">Digital Clock</a></li><br>
+          <li><a href="#" onclick="toggleClocks('analog')">Analog Clock</a></li><br>
+          <li><a href="#">Count Down</a></li><br>
+          <li><a href="#">Calendar</a></li>
+        </ul>
+      </nav>
+      <div id="container">
+        <p id="digital" style="display: none;"></p>
+        <div id="analog">
+            <div class="numberA">12</div>
+            <div class="numberB">3</div>
+            <div class="numberC">6</div>
+            <div class="numberD">9</div>
+          <div class="hand" id="hour-hand"></div>
+          <div class="hand" id="minute-hand"></div>
+          <div class="hand" id="second-hand"></div>
+        </div>
+      </div>
+    
+</body>
+</html>
+  </body>
+</html>

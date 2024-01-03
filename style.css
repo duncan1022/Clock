@@ -1,0 +1,120 @@
+
+body {
+    background-color:#8F0500 ;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px; 
+    background-color: gray;
+  }
+
+li {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid black;
+  }
+
+li:last-child {
+    border-bottom: none; 
+  }
+li:hover {
+    background-color: #8F0500;
+  }
+
+#container{
+    min-height: 800px;
+    position: relative;
+  }
+  #digital{
+    text-align: center;
+    text-shadow: 2px 2px #8F0500;
+    font-size:72px;
+    background-image: linear-gradient(to bottom right, gray, black);
+    color: red;
+    min-width: 380px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #analog {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .numberA { /* 12 */
+    font-size: 25px;
+    color: gray;
+    text-shadow: 2px 2px #333;
+    margin: 0 auto;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .numberB { /* 3 */
+    font-size: 25px;
+    color: gray;
+    text-shadow: 2px 2px #333;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 50%;
+    right: 10px;
+    transform: translateY(50%);
+  }
+  
+  .numberC { /* 6 */
+    font-size: 25px;
+    color: gray;
+    text-shadow: 2px 2px #333;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .numberD { /* 9 */
+    font-size: 25px;
+    color: gray;
+    text-shadow: 2px 2px #333;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  .hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+  }
+  #hour-hand {
+    height: 8px;
+    background-color: #333;
+  }
+  #minute-hand {
+    height: 4px;
+    background-color: #555;
+  }
+  #second-hand {
+    height: 2px;
+    background-color: #ff0000;
+  }
