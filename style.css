@@ -1,32 +1,47 @@
 
 body {
-    background-color:#8F0500 ;
+  background-image: radial-gradient(circle, black, #8F0500, red);;
     
 }
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    width: 200px; 
-    background-color: gray;
+    padding: 15px;
+    width: 220px; 
+    height: 700px;
+    background-image: linear-gradient(to bottom right,rgb(40, 40, 43), #333);
+    border-style: solid;
+    border-radius: 10px;
   }
 
 li {
     text-align: center;
+    color: red;
     padding: 8px;
-    border-bottom: 1px solid black;
+    margin-top: 75px;
+    width: 200px; 
+    height: 75px;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
   }
 
 li:last-child {
-    border-bottom: none; 
+  width: 200px; 
+  height: 75px;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
   }
 li:hover {
     background-color: #8F0500;
+    filter: drop-shadow(1rem 1rem 10px red)
   }
 
 #container{
-    min-height: 800px;
-    position: relative;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
   }
   #digital{
     text-align: center;
@@ -36,28 +51,32 @@ li:hover {
     color: red;
     min-width: 380px;
     padding: 10px;
+    border-style: solid;
+    border-color: black;
     border-radius: 20px;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: drop-shadow(0rem 1rem 10px #8F0500);
   }
   #analog {
     width: 200px;
     height: 200px;
-    border: 5px solid #333;
+    border: 5px solid white;
     border-radius: 50%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: drop-shadow(0rem 0rem 10px #8F0500);
   }
   .numberA { /* 12 */
     font-size: 25px;
-    color: gray;
-    text-shadow: 2px 2px #333;
+    color: white;
+    text-shadow: 1px 1px white;
     margin: 0 auto;
     position: absolute;
     top: 10px;
@@ -67,8 +86,8 @@ li:hover {
   
   .numberB { /* 3 */
     font-size: 25px;
-    color: gray;
-    text-shadow: 2px 2px #333;
+    color: white;
+    text-shadow: 1px 1px white;
     margin: 0 auto;
     position: absolute;
     bottom: 50%;
@@ -78,8 +97,8 @@ li:hover {
   
   .numberC { /* 6 */
     font-size: 25px;
-    color: gray;
-    text-shadow: 2px 2px #333;
+    color: white;
+    text-shadow: 1px 1px white;
     margin: 0 auto;
     position: absolute;
     bottom: 10px;
@@ -89,8 +108,8 @@ li:hover {
   
   .numberD { /* 9 */
     font-size: 25px;
-    color: gray;
-    text-shadow: 2px 2px #333;
+    color: white;
+    text-shadow: 1px 1px white;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -116,5 +135,113 @@ li:hover {
   }
   #second-hand {
     height: 2px;
-    background-color: #ff0000;
+    background-color: red;
   }
+
+
+#buttonA  {
+  padding: 10px 15px;
+  position: relative;
+  margin: 25px 50px 75px;
+  top: 250px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  filter: drop-shadow(0rem 1rem 10px #8F0500)
+}
+#buttonB  {
+  padding: 10px 15px;
+  position: relative;
+  margin: 10px 50px 25px;
+  top: 250px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  filter: drop-shadow(0rem 1rem 10px #8F0500)
+}
+
+#buttonA:hover {
+  background-color: #555;
+}
+
+#buttonB:hover {
+  background-color: #555;
+}
+  #counter {
+    text-align: center;
+    display: block; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+}
+
+#countdown {
+  text-align: center;
+  text-shadow: 2px 2px #8F0500;
+  font-size: 72px;
+  background-image: linear-gradient(to bottom right, gray, black);
+  color: red;
+  min-width: 380px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: black;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 10%; /* Adjust the distance from the bottom */
+  left: 50%;
+  transform: translate(-50%, 50%);
+  filter: drop-shadow(0rem 1rem 10px #8F0500)
+}
+
+#calendar {
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+#calendar th {
+  background-color: #333;
+  color: black;
+}
+
+#calendar td {
+  background-color: gray;
+  font-size: 18px;
+}
+
+#calendar td:hover {
+  background-color: #8F0500;
+  color: white;
+}
+  
+ 
+
+  
+ 
+ 
+
+ 

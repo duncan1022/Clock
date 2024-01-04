@@ -10,15 +10,15 @@
   <body>
     <nav>
         <ul>
-          <li><a href="#">Home</a></li><br>
-          <li><a href="#" onclick="toggleClocks('digital')">Digital Clock</a></li><br>
-          <li><a href="#" onclick="toggleClocks('analog')">Analog Clock</a></li><br>
-          <li><a href="#">Count Down</a></li><br>
-          <li><a href="#">Calendar</a></li>
+          <li><a href="#" onclick="toggleClocks('digital')">Digital Clock</a></li>
+          <li><a href="#" onclick="toggleClocks('analog')">Analog Clock</a></li>
+          <li><a href="#" onclick="toggleClocks('countdown')">Count Down</a></li>
+          <li><a href="#" onclick="toggleClocks('calendar')">Calendar</a></li>
         </ul>
       </nav>
       <div id="container">
         <p id="digital" style="display: none;"></p>
+      </div>
         <div id="analog">
             <div class="numberA">12</div>
             <div class="numberB">3</div>
@@ -27,9 +27,28 @@
           <div class="hand" id="hour-hand"></div>
           <div class="hand" id="minute-hand"></div>
           <div class="hand" id="second-hand"></div>
-        </div>
       </div>
-    
+      <div id="counter" style="display: none;">
+        <p id="countdown"></p>
+        <button id= "buttonA" onclick="addTime()">Add Time (+)</button>
+        <button id= "buttonB" onclick="subtractTime()">Subtract Time (-)</button>
+      </div>
+      <div id="calendar" style="display: none;">
+        <h2>Calendar</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </tr>
+          </thead>
+          <tbody id="calendar-body"></tbody>
+        </table>
 </body>
 </html>
   </body>
